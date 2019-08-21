@@ -7,12 +7,17 @@ const htmlWebpackPlugin = new HtmlWebpackPlugin({
 });
 
 module.exports = {
-    entry: path.join(__dirname, 'examples/src/index.js'),
+    entry: path.join(__dirname, 'examples/src/index.tsx'),
     module: {
         rules: [
             {
                 test: /\.(js|jsx)/,
                 use: 'babel-loader',
+                exclude: /node_modules/
+            },
+            {
+                test: /\.(ts|tsx)/,
+                use: ["ts-loader"],
                 exclude: /node_modules/
             },
             {
@@ -23,7 +28,7 @@ module.exports = {
     },
     plugins: [htmlWebpackPlugin],
     resolve: {
-        extensions: ['.js', '.jsx']
+        extensions: ['.js', '.jsx', '.ts', '.tsx']
     },
     devServer: {
         port: 3001
