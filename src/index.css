@@ -47,6 +47,7 @@ li {
   color: #fff;
 }
 
-.paginate li span {
+.paginate li svg {
+  font-size: 1.5em;
   overflow: visible;
 }

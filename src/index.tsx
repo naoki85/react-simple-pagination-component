@@ -1,5 +1,7 @@
 import React from 'react';
 import './index.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 export interface PaginateStateProps {
   page: number;
@@ -41,6 +43,9 @@ const ReactSimplePagination: React.FC<PaginateProps> = (props: PaginateProps) =>
   return (
     <div className={"paginate-area"}>
       <ul className="paginate">
+        <li>
+          <FontAwesomeIcon icon={faChevronLeft} />
+        </li>
         {pages.map(i => {
           return (
             <li
@@ -51,6 +56,9 @@ const ReactSimplePagination: React.FC<PaginateProps> = (props: PaginateProps) =>
             </li>
           )
         })}
+        <li>
+          <FontAwesomeIcon icon={faChevronRight} />
+        </li>
       </ul>
     </div>
   )
