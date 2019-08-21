@@ -4,11 +4,11 @@
   "description": "This component is a simple React Pagination.",
   "main": "index.js",
   "scripts": {
-    "transpile": "babel src -d dist --copy-files",
-    "start": "webpack-dev-server --mode development",
-    "build": "webpack --mode production",
-    "deploy": "gh-pages -d examples/dist",
-    "publish": "npm run build && npm run deploy"
+    "build": "webpack --mode production --config webpack.config.js",
+    "start": "webpack-dev-server --mode development --config webpack.config.examples.js",
+    "gh-build": "webpack --mode production --config webpack.config.examples.js",
+    "gh-deploy": "gh-pages -d examples/dist",
+    "gh-publish": "npm run build && npm run deploy"
   },
   "repository": {
     "type": "git",
@@ -24,10 +24,6 @@
   },
   "homepage": "https://github.com/naoki85/react-simple-pagination-component#readme",
   "devDependencies": {
-    "@babel/cli": "^7.5.5",
-    "@babel/core": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
-    "@babel/preset-react": "^7.0.0",
     "@types/react": "^16.9.2",
     "@types/react-dom": "^16.9.0",
     "babel-loader": "^8.0.6",
