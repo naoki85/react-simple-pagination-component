@@ -1,18 +1,15 @@
-import React from 'react';
+import React, { FC } from 'react';
 import './index.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
-export interface PaginateStateProps {
+export interface PaginateProps {
   page: number;
   maxPage: number;
+  onClickAction: (page: number) => void;
 }
-export interface PaginateDispatchProps {
-  fetchPosts: (page: number) => void;
-}
-export interface PaginateProps extends PaginateStateProps {}
 
-const ReactSimplePagination: React.FC<PaginateProps> = (props: PaginateProps) => {
+const ReactSimplePagination: FC<PaginateProps> = (props: PaginateProps) => {
   const range = (start: number, end: number): number[] => {
     return Array.from({ length: end - start + 1 }, (v, k) => k + start)
   };
@@ -43,20 +40,20 @@ const ReactSimplePagination: React.FC<PaginateProps> = (props: PaginateProps) =>
   return (
     <div className={"paginate-area"}>
       <ul className="paginate">
-        <li>
+        <li onClick={() => props.onClickAction(props.page - 1) }>
           <FontAwesomeIcon icon={faChevronLeft} />
         </li>
         {pages.map(i => {
           return (
             <li
               key={i}
-              className={i === 1 ? 'current' : ''}
+              className={props.page === i ? 'current' : ''}
             >
               {i}
             </li>
           )
         })}
-        <li>
+        <li onClick={() => props.onClickAction(props.page + 1) }>
           <FontAwesomeIcon icon={faChevronRight} />
         </li>
       </ul>
