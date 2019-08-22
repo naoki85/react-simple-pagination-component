@@ -8,7 +8,7 @@
     "start": "webpack-dev-server --mode development --config webpack.config.examples.js",
     "gh-build": "webpack --mode production --config webpack.config.examples.js",
     "gh-deploy": "gh-pages -d examples/dist",
-    "gh-publish": "npm run build && npm run deploy"
+    "gh-publish": "npm run gh-build && npm run gh-deploy"
   },
   "repository": {
     "type": "git",
