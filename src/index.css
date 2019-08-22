@@ -13,8 +13,6 @@ li {
   -moz-border-radius: 3px;
   border-radius: 3px;
   display: inline-flex;
-
-  /* display: -webkit-inline-box; */
   display: -ms-inline-flexbox;
   padding: 9px 8px;
 }
