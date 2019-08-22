@@ -4,6 +4,7 @@ import ReactSimplePagination from '../../src'
 
 const App: FC<{}> = () => {
   const [Page, setPage] = useState(1);
+  const maxPage = 5;
 
   return (
     <>
@@ -11,7 +12,7 @@ const App: FC<{}> = () => {
       <h2>Simple Usage</h2>
       <ReactSimplePagination 
         page={Page}
-        maxPage={5}
+        maxPage={maxPage}
         onClickAction={(page: number) => setPage(page)}
       />
       <h2>Props</h2>
@@ -26,13 +27,18 @@ const App: FC<{}> = () => {
         <tbody>
           <tr>
             <td>page</td>
-            <td>Number</td>
+            <td>number</td>
             <td>Current page number.</td>
           </tr>
           <tr>
             <td>maxPage</td>
-            <td>Number</td>
+            <td>number</td>
             <td>Max number of pages.</td>
+          </tr>
+          <tr>
+            <td>onClickAction</td>
+            <td>(page: number) => void</td>
+            <td>Action when button is clicked.</td>
           </tr>
         </tbody>
       </table>

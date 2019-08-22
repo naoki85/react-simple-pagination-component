@@ -40,22 +40,27 @@ const ReactSimplePagination: FC<PaginateProps> = (props: PaginateProps) => {
   return (
     <div className={"paginate-area"}>
       <ul className="paginate">
-        <li onClick={() => props.onClickAction(props.page - 1) }>
-          <FontAwesomeIcon icon={faChevronLeft} />
-        </li>
+        {(props.page > 1) && (
+          <li onClick={() => props.onClickAction(props.page - 1) }>
+            <FontAwesomeIcon icon={faChevronLeft} />
+          </li>
+        )}
         {pages.map(i => {
           return (
             <li
               key={i}
               className={props.page === i ? 'current' : ''}
+              onClick={() => props.onClickAction(i) }
             >
               {i}
             </li>
           )
         })}
-        <li onClick={() => props.onClickAction(props.page + 1) }>
-          <FontAwesomeIcon icon={faChevronRight} />
-        </li>
+        {(props.page < props.maxPage) && (
+          <li onClick={() => props.onClickAction(props.page + 1) }>
+            <FontAwesomeIcon icon={faChevronRight} />
+          </li>
+        )}
       </ul>
     </div>
   )
