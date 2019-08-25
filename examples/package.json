@@ -1,0 +1,39 @@
+{
+  "name": "@naoki85/react-simple-pagination-component",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --config webpack.config.js",
+    "gh-build": "webpack --mode production --config webpack.config.js",
+    "gh-deploy": "gh-pages -d dist",
+    "gh-publish": "npm run gh-build && npm run gh-deploy"
+  },
+  "author": "naoki85",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/naoki85/react-simple-pagination-component/issues"
+  },
+  "homepage": "https://github.com/naoki85/react-simple-pagination-component#readme",
+  "devDependencies": {
+    "@types/react": "^16.9.2",
+    "@types/react-dom": "^16.9.0",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "gh-pages": "^2.1.1",
+    "html-webpack-plugin": "^3.2.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "style-loader": "^1.0.0",
+    "ts-jest": "^24.0.2",
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.5.3",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.7",
+    "webpack-dev-server": "^3.8.0"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.3.3"
+  },
+  "peerDependencies": {
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  }
+}
