@@ -11,6 +11,7 @@ $ npm i @naoki85/react-simple-pagination-component
 # or
 $ yarn add @naoki85/react-simple-pagination-component
 ```
+This package also includes index.d.ts.
 
 ## Usage
 

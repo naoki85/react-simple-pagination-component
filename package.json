@@ -1,11 +1,12 @@
 {
   "name": "@naoki85/react-simple-pagination-component",
-  "version": "0.1.0",
+  "version": "0.2.2",
   "description": "This component is a simple React Pagination.",
-  "main": "dist/bundle.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "jest",
-    "build": "webpack --mode production --config webpack.config.js",
+    "build": "tsc && cp src/index.css dist/index.css",
     "publishOnly": "npm run build",
     "start": "webpack-dev-server --mode development --config webpack.config.examples.js",
     "gh-build": "webpack --mode production --config webpack.config.examples.js",
