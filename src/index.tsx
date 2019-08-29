@@ -14,8 +14,8 @@ const ReactSimplePagination: FC<PaginateProps> = (props: PaginateProps) => {
     return Array.from({ length: end - start + 1 }, (v, k) => k + start)
   };
   const getPages = () => {
-    const maxPage = props.maxPage | 5;
-    const page = props.page | 1;
+    const maxPage = props.maxPage || 5;
+    const page = props.page || 1;
     if (maxPage > 0 && maxPage <= 5) {
       return range(1, maxPage)
     }
