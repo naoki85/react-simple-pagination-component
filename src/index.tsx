@@ -1,12 +1,10 @@
 import React, { FC } from 'react';
 import './index.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 interface PaginateProps {
-  page: number;
   maxPage: number;
   onClickAction: (page: number) => void;
+  page: number;
 }
 
 const ReactSimplePagination: FC<PaginateProps> = (props: PaginateProps) => {
@@ -42,7 +40,7 @@ const ReactSimplePagination: FC<PaginateProps> = (props: PaginateProps) => {
       <ul className="paginate">
         {(props.page > 1) && (
           <li onClick={() => props.onClickAction(props.page - 1) }>
-            <FontAwesomeIcon icon={faChevronLeft} />
+            &lt;
           </li>
         )}
         {pages.map(i => {
@@ -58,7 +56,7 @@ const ReactSimplePagination: FC<PaginateProps> = (props: PaginateProps) => {
         })}
         {(props.page < props.maxPage) && (
           <li onClick={() => props.onClickAction(props.page + 1) }>
-            <FontAwesomeIcon icon={faChevronRight} />
+            &gt;
           </li>
         )}
       </ul>
