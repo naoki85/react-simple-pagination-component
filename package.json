@@ -1,6 +1,6 @@
 {
   "name": "@naoki85/react-simple-pagination-component",
-  "version": "0.2.3",
+  "version": "0.3.0",
   "description": "This component is a simple React Pagination.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -49,16 +49,9 @@
     "webpack-cli": "^3.3.7",
     "webpack-dev-server": "^3.8.0"
   },
-  "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.21",
-    "@fortawesome/free-solid-svg-icons": "^5.10.1",
-    "@fortawesome/react-fontawesome": "^0.1.4"
-  },
+  "dependencies": {},
   "peerDependencies": {
     "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "@fortawesome/fontawesome-svg-core": "^1.2.21",
-    "@fortawesome/free-solid-svg-icons": "^5.10.1",
-    "@fortawesome/react-fontawesome": "^0.1.4"
+    "react-dom": "^16.9.0"
   }
 }
