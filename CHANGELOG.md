@@ -1,5 +1,10 @@
 # Change log
 
+## 0.3.0 (2020-03-01)
+
+- Upgrade npm modules to current version.
+- Remove font-awesome from dependencies.
+
 ## 0.2.3 (2019-08-29)
 
 ### New features
