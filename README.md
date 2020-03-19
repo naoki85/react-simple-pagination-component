@@ -52,3 +52,17 @@ $ npm run build
 ```
 $ npm run publishOnly
 ```
+
+### Test page
+
+```
+$ cd examples
+$ npm run start
+```
+
+### Publish a test page
+
+```
+$ cd examples
+$ npm run gh-publish
+```

@@ -13,24 +13,24 @@
   },
   "homepage": "https://github.com/naoki85/react-simple-pagination-component#readme",
   "devDependencies": {
-    "@types/react": "^16.9.2",
-    "@types/react-dom": "^16.9.0",
+    "@types/react": "^16.9.23",
+    "@types/react-dom": "^16.9.5",
     "babel-loader": "^8.0.6",
-    "css-loader": "^3.2.0",
-    "gh-pages": "^2.1.1",
+    "css-loader": "^3.4.2",
+    "gh-pages": "^2.2.0",
     "html-webpack-plugin": "^3.2.0",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "style-loader": "^1.0.0",
-    "ts-jest": "^24.0.2",
-    "ts-loader": "^6.0.4",
-    "typescript": "^3.5.3",
-    "webpack": "^4.39.2",
-    "webpack-cli": "^3.3.7",
-    "webpack-dev-server": "^3.8.0"
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "style-loader": "^1.1.3",
+    "ts-jest": "^24.3.0",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
   },
   "dependencies": {
-    "@material-ui/core": "^4.3.3"
+    "@material-ui/core": "^4.9.7"
   },
   "peerDependencies": {
     "react": "^16.9.0",
