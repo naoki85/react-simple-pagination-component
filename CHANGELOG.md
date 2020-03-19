@@ -1,5 +1,9 @@
 # Change log
 
+## 0.4.1 (2020-03-19)
+
+- Upgrade minimist for a potential security vulnerability
+
 ## 0.4.0 (2020-03-19)
 
 - Upgrade npm modules to current version.
