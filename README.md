@@ -38,3 +38,17 @@ const App: FC<{}> = () => {
 | page | number | ◯ | Current page number.
 | maxPage | number | ◯ | Max number of pages.
 | onClickAction | (number) => void | ◯ | Action when button is clicked.
+
+## Contributes
+
+### Build
+
+```
+$ npm run build
+```
+
+### Publish
+
+```
+$ npm run publishOnly
+```
