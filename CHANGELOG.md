@@ -1,5 +1,9 @@
 # Change log
 
+## 0.4.0 (2020-03-19)
+
+- Upgrade npm modules to current version.
+
 ## 0.3.0 (2020-03-01)
 
 - Upgrade npm modules to current version.
